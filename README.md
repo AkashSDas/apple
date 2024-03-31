@@ -6,3 +6,4 @@
 - Vite
 - TypeScript
 - TailwindCSS
+- GSAP
