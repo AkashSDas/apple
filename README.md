@@ -12,4 +12,5 @@
 
 ## Snapshots
 
+![Mobile view](./docs/mobile-view.gif)
 ![Sentry dashhboard](./docs/sentry-dashboard.png)
