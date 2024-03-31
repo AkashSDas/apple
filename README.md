@@ -9,3 +9,7 @@
 - GSAP
 - Three.js
 - Sentry
+
+## Snapshots
+
+![Sentry dashhboard](./docs/sentry-dashboard.png)
