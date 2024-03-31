@@ -2,8 +2,9 @@ import Hero from "./components/Hero";
 import Highlight from "./components/Highlight";
 import Model from "./components/Model";
 import Navbar from "./components/Navbar";
+import * as Sentry from "@sentry/react";
 
-export default function App(): JSX.Element {
+function App(): JSX.Element {
     return (
         <div>
             <Navbar />
@@ -13,3 +14,5 @@ export default function App(): JSX.Element {
         </div>
     );
 }
+
+export default Sentry.withProfiler(App);

@@ -7,3 +7,5 @@
 - TypeScript
 - TailwindCSS
 - GSAP
+- Three.js
+- Sentry
