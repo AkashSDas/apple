@@ -1,3 +1,4 @@
+import Features from "./components/Features";
 import Hero from "./components/Hero";
 import Highlight from "./components/Highlight";
 import Model from "./components/Model";
@@ -11,6 +12,7 @@ function App(): JSX.Element {
             <Hero />
             <Highlight />
             <Model />
+            <Features />
         </div>
     );
 }

@@ -1,4 +1,24 @@
 import * as THREE from "three";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/all";
+
+gsap.registerPlugin(ScrollTrigger);
+
+export function animateWithGsap(
+    target: gsap.DOMTarget,
+    animationOptions: gsap.TweenVars,
+    scrollTriggerOptions?: ScrollTrigger.Vars
+) {
+    gsap.to(target, {
+        ...animationOptions,
+        scrollTrigger: {
+            trigger: target,
+            toggleActions: "restart reverse restart reverse",
+            start: "top 85%",
+            ...scrollTriggerOptions,
+        },
+    });
+}
 
 export function animateWithGsapTimeline(
     timeline: gsap.core.Timeline,
